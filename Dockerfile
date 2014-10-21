@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Preparation
 RUN rm -fr /app/* && \
-  apt-get update && apt-get install -yqq wget unzip && \
+  apt-get update && apt-get install -yqq wget unzip php5-curl && \
   rm -rf /var/lib/apt/lists/*
 
 # Deploy Nutillidae
