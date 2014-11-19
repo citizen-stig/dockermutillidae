@@ -8,7 +8,7 @@ RUN rm -fr /app/* && \
   apt-get update && apt-get install -yqq wget unzip php5-curl && \
   rm -rf /var/lib/apt/lists/*
 
-# Deploy Nutillidae
+# Deploy Mutillidae
 RUN \
   wget -O /mutillidae.zip http://sourceforge.net/projects/mutillidae/files/latest/download && \
   unzip /mutillidae.zip && \
