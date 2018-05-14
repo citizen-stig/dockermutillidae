@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Preparation
 RUN rm -fr /app/* && \
   apt-get update && apt-get install -yqq wget unzip php5-curl dnsutils && \
-  apt-get upgrade ca-certificates && \
+  apt-get upgrade -yqq ca-certificates && \
   update-ca-certificates && \
   rm -rf /var/lib/apt/lists/*
 
