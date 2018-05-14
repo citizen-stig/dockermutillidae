@@ -10,7 +10,7 @@ RUN rm -fr /app/* && \
 
 # Deploy Mutillidae
 RUN \
-  wget -O /mutillidae.zip http://sourceforge.net/projects/mutillidae/files/latest/download && \
+  wget -O /mutillidae.zip https://sourceforge.net/projects/mutillidae/files/latest/download && \
   unzip /mutillidae.zip && \
   rm -rf /app/* && \
   cp -r /mutillidae/* /app  && \
