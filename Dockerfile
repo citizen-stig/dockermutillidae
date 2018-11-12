@@ -12,8 +12,6 @@ RUN rm -fr /app/* && \
 
 # Deploy Mutillidae
 RUN \
-#  wget -O /mutillidae.zip https://sourceforge.net/projects/mutillidae/files/latest/download && \
-#  unzip /mutillidae.zip && \
   git clone https://github.com/webpwnized/mutillidae.git && \
   rm -rf /app/* && \
   cp -r /mutillidae/* /app  && \
